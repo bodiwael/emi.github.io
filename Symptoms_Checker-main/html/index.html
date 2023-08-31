@@ -1,0 +1,660 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/all.min.css">
+  <link rel="stylesheet" href="../css/index_style.css">
+  <!-- <link href="style.css" rel="stylesheet"> -->
+
+</head>
+
+<body>
+
+
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img src="img/logo6.png"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="nav navbar-nav menu_nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item submenu dropdown">
+						<a href="department.html" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+							aria-haspopup="true" aria-expanded="false">X-Ray Analyser</a>
+						<ul class="dropdown-menu">
+							<li class="nav-item"><a class="nav-link"
+									href="Breast-Cancer-Analyzer-master/index.html">Breast Cancer</a></li>
+							<li class="nav-item"><a class="nav-link"
+									href="HUMER-Pneumonia-Detector/index.html">Peneumnia</a></li>
+							<li class="nav-item"><a class="nav-link" href="Skin-Lesion-Analyzer-master/index.html">Skin
+									Cancer</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Symptoms_Checker-main/html/index.html">Symptoms Checker</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="chatbot-master/index.html">Medi Chatbot</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Login-Registration-Form-main/index.html">Sign In</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+  <!-- Progress Bar -->
+  <div class="container masafatbar">
+    <!-- Circles which indicates the steps of the form: -->
+    <div class="clearfix" style="text-align:center;margin-top:40px;">
+      <div class="step active"> <span> <a href="#">Introduction</a></span> </div>
+      <div class="step"> <span><a href="#">Patient</a></span> </div>
+      <div class="step"> <span><a href="#">Symptoms</a><span> </div>
+      <div class="step"> <span><a href="#">Interview</a><span> </div>
+      <div class="step"> <span><a href="#">Results</a><span> </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Content Area -->
+
+  <div class="workspace container position-absloute">
+
+    <form id="regForm" action="">
+
+      <!-- One "tab" for each step in the form: -->
+
+      <!-- Introduction -->
+      <div class="parent tab container">
+        <h3>Hello,</h3>
+        <p>You are about to use a health symptoms checker. The results will give you possible causes for your symptoms,
+          but this analysis will never be 100% accurate. If you are seriously ill, you should see a doctor.</p>
+      </div>
+
+      <!-- Patient -->
+
+      <div class="parent tab container ">
+        <div>
+          <fieldset class="form-group row">
+            <h2 class="col-form-label col-sm-2 float-sm-left pt-0">Checkup For </h2>
+            <div class="col-sm-10">
+              <div class="custom-control custom-radio custom-control-inline">
+                <input value="mySelf" type="radio" id="customRadioInline1" name="customRadioInline"
+                  class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1">MySelf</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input value="Else" type="radio" id="customRadioInline2" name="customRadioInline"
+                  class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline2">Another One</label>
+              </div>
+            </div>
+        </div>
+        <br>
+        <div>
+          <fieldset class="form-group row">
+            <h2 class="col-form-label col-sm-2 float-sm-left pt-0">Gender :</h2>
+            <div class="col-sm-10">
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="Male" name="customRadioInlineGen" class="custom-control-input">
+                <label class="custom-control-label" for="Male">Male</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="Female" name="customRadioInlineGen" class="custom-control-input">
+                <label class="custom-control-label" for="Female">Female</label>
+              </div>
+
+            </div>
+        </div>
+        <br>
+        <div>
+          <label>Age : </label>
+          <input class="ml-4" type="number" name="uage" style="width: 30%;" min="8">
+        </div>
+        <br>
+        <div>
+          <form class="form-inline">
+            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Region : </label>
+            <select class="custom-select my-1 mr- sm-2 " style="width: 30%;" id="inlineFormCustomSelectPref" required>
+              <option value="" disabled selected hidden>Choose Region...</option>
+              <option value="1">Western Europe</option>
+              <option value="2">Eastern Europe</option>
+              <option value="3">Central Africa </option>
+              <option value="4">North Africa</option>
+              <option value="5">East Africa</option>
+              <option value="6">Southern Africa</option>
+              <option value="7">West Africa</option>
+              <option value="8">Southeast Asia</option>
+              <option value="9">East Asia</option>
+              <option value="10">South Asia</option>
+              <option value="11">Caribbean</option>
+              <option value="12">North America</option>
+              <option value="13">Central America</option>
+              <option value="14">South America</option>
+              <option value="15">Australasia</option>
+              <option value="16">Middle East</option>
+            </select>
+        </div>
+      </div>
+      <!-- Symptoms -->
+
+      <div class="parent tab container ">
+        <label for="level1" class="h5">Place :</label>
+        <select name="place" id="level1" class="mr-5">
+
+          <option value="Head & Neck">Head & Neck</option>
+          <option value="Eyes">Eyes</option>
+          <option value="Ear, Nose & Throat">Ear, Nose & Throat</option>
+          <option value="chest and back">chest and back</option>
+          <option value="arms and hands">arms and hands</option>
+          <option value="Abdomen and pelvis">Abdomen and pelvis</option>
+          <option value="legs">legs</option>
+          <option value="Other">Other</option>
+
+        </select>
+        <label for="level2" class="h5">Symptoms :</label>
+        <select name="" id="level2"></select>
+      </div>
+      <!-- interview -->
+      <div class="parent tab container ">
+        <div>
+          <div class="text-center">
+            <h3 class="text-center">
+              please check all the statements below that apply to <br>you.
+            </h3>
+            <br>
+            <p class="text-center">select one answer in each row</p>
+            <br>
+            <div class="text-center ">
+              <table width="100%" class="text-center">
+                <tr>
+                  <td style="width: 50%;">
+                    <p class="item">i'm overweight or obese</p>
+                  </td>
+
+
+
+
+                  <td style="width: 50%;">
+                    <P class="item1">
+                      <input type="radio" name="obese" value="obese" class="">
+                      <label>Yes</label>
+
+
+
+                      <input type="radio" name="obese" value="obese" class="">
+                      <label>No</label>
+
+
+
+
+
+                      <input type="radio" name="obese" value="obese" class="">
+                      <label>I Don't Know!</label>
+                    </P>
+                  </td>
+
+
+
+
+
+                </tr>
+                <tr>
+                  <td style="width: 50%;">
+                    <p class="item2">i smoke cigarettes</p>
+                  </td>
+
+
+
+
+                  <td style="width: 50%;">
+                    <P class="item1">
+                      <input type="radio" name="cigarettes" value="cigarettes" class="">
+                      <label>Yes</label>
+
+
+
+                      <input type="radio" name="cigarettes" value="cigarettes" class="">
+                      <label>No</label>
+
+
+
+
+
+                      <input type="radio" name="cigarettes" value="cigarettes" class="">
+                      <label>I Don't Know!</label>
+                    </P>
+                  </td>
+
+
+
+
+
+                </tr>
+                <tr>
+                  <td style="width: 50%;">
+                    <p class="item3">i've recently suffered an injury</p>
+                  </td>
+
+
+
+
+                  <td style="width: 50%;">
+                    <P class="item1">
+                      <input type="radio" name="injury" value="injury" class="">
+                      <label>Yes</label>
+
+
+
+                      <input type="radio" name="injury" value="injury" class="">
+                      <label>No</label>
+
+
+
+
+
+                      <input type="radio" name="injury" value="injury" class="">
+                      <label>I Don't Know!</label>
+                    </P>
+                  </td>
+
+
+
+
+
+                </tr>
+                <tr>
+                  <td style="width: 50%;">
+                    <p class="item4">i have high cholesterol</p>
+                  </td>
+
+
+
+
+                  <td style="width: 50%;">
+                    <P class="item1">
+                      <input type="radio" name="cholesterol" value="cholesterol" class="">
+                      <label>Yes</label>
+
+
+
+                      <input type="radio" name="cholesterol" value="cholesterol" class="">
+                      <label>No</label>
+
+
+
+
+
+                      <input type="radio" name="cholesterol" value="cholesterol" class="">
+                      <label>I Don't Know!</label>
+                    </P>
+                  </td>
+
+
+
+
+
+                </tr>
+                <tr>
+                  <td style="width: 50%;">
+                    <p class="item5">i have hypertension</p>
+                  </td>
+
+
+
+
+                  <td style="width: 50%;">
+                    <P class="item1">
+                      <input type="radio" name="hypertension" value="hypertension" class="">
+                      <label>Yes</label>
+
+
+
+                      <input type="radio" name="hypertension" value="hypertension" class="">
+                      <label>No</label>
+
+
+
+
+
+                      <input type="radio" name="hypertension" value="hypertension" class="">
+                      <label>I Don't Know!</label>
+                    </P>
+                  </td>
+
+
+
+
+
+
+                </tr>
+
+                <tr>
+                  <td style="width: 50%;">
+                    <p class="item17">Do you have diabetes</p>
+                  </td>
+
+
+
+
+                  <td style="width: 50%;">
+                    <P class="item1">
+                      <input type="radio" name="diabetes" value="diabetes" class="">
+                      <label>Yes</label>
+
+
+
+                      <input type="radio" name="diabetes" value="diabetes" class="">
+                      <label>No</label>
+
+
+
+
+
+                      <input type="radio" name="diabetes" value="diabetes" class="">
+                      <label>I Don't Know!</label>
+                    </P>
+                  </td>
+
+
+
+
+
+
+                </tr>
+
+              </table>
+            </div>
+            <br>
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Result -->
+      <div class=" tab container ">
+        <h4>Results</h4>
+        <p>Please note that the list below may not be complete and is provided solely for informational purposes and is
+          not a qualified medical opinion.</p>
+        <p class="text">CoronaVirus.</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        </div>
+        <hr>
+        <p class="text">Normal Flu </p>
+        <div class="progress">
+          <div class="progress-bar " role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+            aria-valuemax="100"></div>
+
+        </div>
+        <hr>
+        <p class="text">Pneumonia </p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        </div>
+        <hr>
+        <div>
+
+        </div>
+      </div>
+
+
+      <!-- Buttons -->
+      <div style="overflow:auto;">
+        <div style="float:right;">
+          <button class="btn btn-dark mr-5" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+          <button class="btn btn-secondary pl-3 pr-3" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        </div>
+      </div>
+
+      <img src="crop_human.jpg" alt="" usemap="#Map" class="map" />
+      <map name="Map" id="Map">
+    
+        <div id="1"><area alt="hand" title="" href="#" shape="poly" coords="153,141,174,131,182,275,161,270" /></div>
+        <p id="text1"></p>
+    
+        <div id="2"><area alt="hand" title="" href="#" shape="poly" coords="46,135,74,147,63,274,41,269" /></div>
+        <p id="text2"></p>
+    
+        <div id="3"><area alt="shoulder" title="" href="#" shape="poly" coords="46,117,67,132,90,98,83,89" /></div>
+        <p id="text3"> </p>
+    
+        <div id="4"><area alt="shoulder" title="" href="#" shape="poly" coords="159,128,174,115,139,92,131,107" /></div>
+        <p id="text4"></p>
+    
+        <div id="5"><area alt="chest" title="" href="#" shape="poly" coords="78,122,145,124,146,151,80,153" /></div>
+        <p id="text5"></p>
+    
+        <div id="6"><area alt="stomach" title="" href="#" shape="poly" coords="79,168,146,174,148,211,76,213" /></div>
+        <p id="text6"></p>
+    
+        <div id="7"><area alt="thigh" title="" href="#" shape="poly" coords="110,252,108,296,76,290,74,248" /></div>
+        <p id="text7"></p>
+    
+        <div id="8"><area alt="thigh" title="" href="#" shape="poly" coords="116,253,152,246,148,290,117,292" /></div>
+        <p id="text8"></p>
+    
+        <div id="9"><area alt="knee" title="" href="#" shape="poly" coords="86,315,110,320,110,347,86,348" /></div>
+        <p id="text9"></p>
+    
+        <div id="10"><area alt="knee" title="" href="#" shape="poly" coords="115,317,138,310,140,350,119,350" /></div>
+        <p id="text10"></p>
+    
+        <div id="11"><area alt="lower-leg" title="" href="#" shape="poly" coords="84,360,107,361,111,449,82,449" /></div>
+        <p id="text11"></p>
+    
+        <div id="12"><area alt="lower-leg" title="" href="#" shape="poly" coords="119,363,145,364,144,448,118,449" /></div>
+        <p id="text12"></p>
+    
+        <div id="13"><area alt="neck" title="" href="#" shape="poly" coords="96,81,127,81,124,89,98,91" /></div>
+        <p id="text13"></p>
+    
+        <div id="14"><area alt="head" title="" href="#" shape="poly" coords="91,31,136,31,129,74,94,72" /></div>
+        <p id="text14"></p>
+    
+      </map>
+    
+      <script>
+        var item1 = document.getElementById("1");
+        item1.addEventListener("mouseover", fun1, false);
+        item1.addEventListener("mouseout", func1, false);
+    
+        function fun1() {
+          document.getElementById("text1").setAttribute("style", "display:block;");
+          document.getElementById("text1").innerHTML = "Hand";
+        }
+    
+        function func1() {
+          document.getElementById("text1").setAttribute("style", "display:none;");
+        }
+    
+        var item2 = document.getElementById("2");
+        item2.addEventListener("mouseover", fun2, false);
+        item2.addEventListener("mouseout", func2, false);
+    
+        function fun2() {
+          document.getElementById("text2").setAttribute("style", "display:block;");
+          document.getElementById("text2").innerHTML = "Hand";
+        }
+    
+        function func2() {
+          document.getElementById("text2").setAttribute("style", "display:none;");
+        }
+    
+        var item3 = document.getElementById("3");
+        item3.addEventListener("mouseover", fun3, false);
+        item3.addEventListener("mouseout", func3, false);
+    
+        function fun3() {
+          document.getElementById("text3").setAttribute("style", "display:block;");
+          document.getElementById("text3").innerHTML = "Shoulder";
+        }
+    
+        function func3() {
+          document.getElementById("text3").setAttribute("style", "display:none;")
+        }
+    
+        var item4 = document.getElementById("4");
+        item4.addEventListener("mouseover", fun4, false);
+        item4.addEventListener("mouseout", func4, false);
+    
+        function fun4() {
+          document.getElementById("text4").setAttribute("style", "display:block;");
+          document.getElementById("text4").innerHTML = "Shoulder";
+        }
+    
+        function func4() {
+          document.getElementById("text4").setAttribute("style", "display:none;")
+        }
+    
+        var item5 = document.getElementById("5");
+        item5.addEventListener("mouseover", fun5, false);
+        item5.addEventListener("mouseout", func5, false);
+    
+        function fun5() {
+          document.getElementById("text5").setAttribute("style", "display:block;");
+          document.getElementById("text5").innerHTML = "Chest";
+        }
+    
+        function func5() {
+          document.getElementById("text5").setAttribute("style", "display:none;");
+        }
+    
+        var item6 = document.getElementById("6");
+        item6.addEventListener("mouseover", fun6, false);
+        item6.addEventListener("mouseout", func6, false);
+    
+        function fun6() {
+          document.getElementById("text6").setAttribute("style", "display:block;");
+          document.getElementById("text6").innerHTML = "Stomach";
+        }
+    
+        function func6() {
+          document.getElementById("text6").setAttribute("style", "display:none;")
+        }
+    
+        var item7 = document.getElementById("7");
+        item7.addEventListener("mouseover", fun7, false);
+        item7.addEventListener("mouseout", func7, false);
+    
+        function fun7() {
+          document.getElementById("text7").setAttribute("style", "display:block;");
+          document.getElementById("text7").innerHTML = "Thigh";
+        }
+    
+        function func7() {
+          document.getElementById("text7").setAttribute("style", "display:none;");
+        }
+    
+        var item8 = document.getElementById("8");
+        item8.addEventListener("mouseover", fun8, false);
+        item8.addEventListener("mouseout", func8, false);
+    
+        function fun8() {
+          document.getElementById("text8").setAttribute("style", "display:block;");
+          document.getElementById("text8").innerHTML = "Thigh";
+        }
+    
+        function func8() {
+          document.getElementById("text8").setAttribute("style", "display:none;")
+        }
+    
+        var item9 = document.getElementById("9");
+        item9.addEventListener("mouseover", fun9, false);
+        item9.addEventListener("mouseout", func9, false);
+    
+        function fun9() {
+          document.getElementById("text9").setAttribute("style", "display:block;");
+          document.getElementById("text9").innerHTML = "Knee";
+        }
+    
+        function func9() {
+          document.getElementById("text9").setAttribute("style", "display:none;")
+        }
+    
+        var item10 = document.getElementById("10");
+        item10.addEventListener("mouseover", fun10, false);
+        item10.addEventListener("mouseout", func10, false);
+    
+        function fun10() {
+          document.getElementById("text10").setAttribute("style", "display:block;")
+          document.getElementById("text10").innerHTML = "Knee";
+        }
+    
+        function func10() {
+          document.getElementById("text10").setAttribute("style", "display:none;")
+        }
+    
+        var item11 = document.getElementById("11");
+        item11.addEventListener("mouseover", fun11, false);
+        item11.addEventListener("mouseout", func11, false);
+    
+        function fun11() {
+          document.getElementById("text11").setAttribute("style", "display:block;");
+          document.getElementById("text11").innerHTML = "Lower-leg";
+        }
+    
+        function func11() {
+          document.getElementById("text11").setAttribute("style", "display:none;")
+        }
+    
+        var item12 = document.getElementById("12");
+        item12.addEventListener("mouseover", fun12, false);
+        item12.addEventListener("mouseout", func12, false);
+    
+        function fun12() {
+          document.getElementById("text12").setAttribute("style", "display:block;");
+          document.getElementById("text12").innerHTML = "Lower-leg";
+        }
+    
+        function func12() {
+          document.getElementById("text12").setAttribute("style", "display:none;")
+        }
+    
+        var item13 = document.getElementById("13");
+        item13.addEventListener("mouseover", fun13, false);
+        item13.addEventListener("mouseout", func13, false);
+    
+        function fun13() {
+          document.getElementById("text13").setAttribute("style", "display:block;");
+          document.getElementById("text13").innerHTML = "Neck";
+        }
+    
+        function func13() {
+          document.getElementById("text13").setAttribute("style", "display:none;")
+        }
+    
+        var item14 = document.getElementById("14");
+        item14.addEventListener("mouseover", fun14, false);
+        item14.addEventListener("mouseout", func14, false);
+    
+        function fun14() {
+          document.getElementById("text14").setAttribute("style", "display:block;");
+          document.getElementById("text14").innerHTML = "Head";
+        }
+    
+        function func14() {
+          document.getElementById("text14").setAttribute("style", "display:none;")
+        }
+      </script>
+      <script src="../js/jquery-3.5.1.slim.min.js"></script>
+      <script src="../js/popper.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/mine.js"></script>
+</body>
+
+</html>
