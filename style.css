@@ -19,6 +19,11 @@ html, body{
 .nav-link{
   font-size: 1.1em !important;
 }
+iframe {
+  display: block;
+  margin: auto;
+  padding-bottom: 50px;
+}
 .carousel-inner img{
   width: 100%;
 }
@@ -252,7 +257,6 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
 
 
 
